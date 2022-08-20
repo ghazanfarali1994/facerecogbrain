@@ -22,21 +22,27 @@ function Particle() {
 
             options={ {
     
-        particles: {
-            links: {
-                distance: 150,
-                enable: true,
-            },
-            move: {
-                enable: true,
-            },
-            size: {
-                value: 1,
-            },
-            shape: {
-                type: "circle",
-            },
-        },
+                        particles: {
+                            links: {
+                                enable: true,
+                            },
+                            move: {
+                                enable: true,
+                            },
+                            size: {
+                                value: 1,
+                            },
+                            shape: {
+                                type: "circle",
+                            },
+                            number: {
+                                value:100,
+                                density: {
+                                    enable: true,
+                                    value_area:800
+                                }
+                            },
+                        },
 }
 }
     />
