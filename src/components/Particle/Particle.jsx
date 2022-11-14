@@ -21,8 +21,12 @@ function Particle() {
             loaded={particlesLoaded}
 
             options={ {
-    
-                        particles: {
+                    "fullScreen": {
+                                "enable": true,
+                                "zIndex": -1
+                            },
+
+                    particles: {
                             links: {
                                 enable: true,
                             },
@@ -30,10 +34,15 @@ function Particle() {
                                 enable: true,
                             },
                             size: {
-                                value: 1,
+                                value: 0.5,
                             },
                             shape: {
                                 type: "circle",
+                            },
+                            zIndex: -1,
+                            fullScreen: {
+                                enable: true,
+                                zIndex: -1
                             },
                             number: {
                                 value:100,
